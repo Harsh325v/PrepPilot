@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>PrepPilot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+  <aside id="sidebar">
+    <div class="progress-tracker">
+      <h3>📊 Progress</h3>
+      <div id="overallProgress">0%</div>
+    </div>
+    <div class="mode-toggle">
+      <button id="themeToggle" class="theme-btn">🌙</button>
+    </div>
+    <h2>🎯 PrepPilot</h2>
+    <button class="nav-btn active" data-view="home">Companies</button>
+    <button class="nav-btn" data-view="roadmap">Roadmap</button>
+    <button class="nav-btn" data-view="daily">Daily Plan</button>
+    <button class="nav-btn" data-view="mock">Mock Test</button>
+    <button class="nav-btn" data-view="bookmarks">Bookmarks</button>
+  </aside>
+
+  <main id="content">
+    <section id="homeView" class="view"></section>
+    <section id="companyView" class="view hidden"></section>
+    <section id="roadmapView" class="view hidden"></section>
+    <section id="dailyView" class="view hidden"></section>
+    <section id="mockView" class="view hidden"></section>
+    <section id="bookmarksView" class="view hidden"></section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
